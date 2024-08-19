@@ -4,17 +4,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tea-House</title>
+
+
+ <!-- font-style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+
+<!-- awesome-icon -->
+<script src="https://kit.fontawesome.com/200660927f.js" crossorigin="anonymous"></script>
+
+<!-- tailwind-css -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+        }
+      }
+    }
+  }
+</script>
+
 </head>
 <body>
-  <header>
+     <main class="max-w-screen-xl items-center mx-auto px-16 lg:px-28">
 
-  </header>
-  <main>
+      <!-- header section -->
+        <header class="flex mt-10 mb-20">
+            
+          <!-- text content -->
+           <div>
+             <h1 class="text-7xl font-extrabold ">It's good 
+              <br>tea time at The Tea
+              <br> House</h1>
+              <p class=" font-medium text-lg text-gray-400 w-3/4">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+              <button class="text-xl font-bold bg-gradient-to-r from-orange-500 to-red-500 p-4 rounded-xl text-white">Explore More <i class="fa-solid fa-arrow-right -rotate-45"></i></button>
+           </div>
 
-  </main>
-  <footer>
-    
-  </footer>
-  
+           <!-- picture content -->
+            <div class="relative">
+
+              <!-- img -->
+               <div>
+                <img class="w-full" src="./images/banner.png" alt="">
+               </div>
+
+               <!-- card -->
+                <div class="absolute top-2/4 flex bg-zinc-100 items-center px-2 py-2 md:px-10 lg:py-2  rounded-lg">
+
+                  <!-- icon -->
+                    <div><i class="fa-solid fa-star text-2xl text-amber-300"></i></div>
+
+                    <!--text  -->
+                    <div class="ml-3">
+                      <h3 class="text-3xl font-bold">5.00</h3>
+                      <p class="text-base font-semibold text-[#777777]">Trust Pilot Ratings</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+     </main>
 </body>
 </html>
